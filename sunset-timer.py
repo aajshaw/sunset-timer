@@ -7,15 +7,15 @@ import time
 import subprocess
 from dateutil import tz
 
-# 0. get config location
-# 1. get sunset time and sleep until then
-# 2. get config switches
-# 3. turn on all switches
-# 4. sleep until midnight
-# 5. turn off all switches
-# 6. forget all switch data
-# 7. sleep until 03:00 to allow for daylight saving time changovers
-# 7. loop to 1
+# 1. get config location
+# 2. get sunset time and sleep until then
+# 3. get config switches
+# 4. turn on all switches
+# 5. sleep until midnight
+# 6. turn off all switches
+# 7. forget all switch data
+# 8. sleep until 03:00 to allow for daylight saving time changovers
+# 9. loop to 1
 
 class Switch():
     def __init__(self, id):
